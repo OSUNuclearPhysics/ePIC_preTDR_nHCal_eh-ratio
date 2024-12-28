@@ -10,7 +10,7 @@ cd simjobsubmission
 
 use `./run.sh` on BNL-SDCC shell
 
-It will run multiple jobs with particle gun type and momentum specified - `particle_p_all.txt`, the execution script is defined in `runSimBatch.sh`.
+It will run multiple jobs with particle gun type and momentum specified in  `particle_p_all.txt`, the execution script is defined in `runSimBatch.sh`.
 
 The analysis macro for filling hitograms with energy deposition is defined in `readHCalSimReader.C`. This macro is executed on Simulation output files.
 
