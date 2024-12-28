@@ -11,7 +11,7 @@ export FILENAME=${GUN_PARTICLE}_${NUMBER_OF_EVENTS}events_p${GUN_MOMENTUM}GeV_${
 export DDSIM_FILE=sim_${FILENAME}.edm4hep.root
 export OUTPUT_FILE=output_${FILENAME}.root
 
-
+# run the simulation in the eic-shell
 echo "source runSimBatch.sh ${1} ${2}" | /eic/u/palspeic/eic-shell
 
 #EOF

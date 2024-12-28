@@ -13,6 +13,8 @@ if [ ! -e "$input_file" ]; then
   echo "Input file '$input_file' does not exist."
   exit 1
 fi
+
+## make the log directory
 mkdir -p /gpfs/mnt/gpfs02/eic/palspeic/simdir/ebyh_response/Steel/log
 ###rm '/gpfs/mnt/gpfs02/eic/palspeic/simdir/ebyh_response/"$1"/log/*'
 

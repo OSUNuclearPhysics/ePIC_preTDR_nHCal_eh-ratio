@@ -32,7 +32,6 @@ fi
     rm -r fieldmaps
 ####fi
 
-###run the root macro "readHCalSimReader.C" to read the output file. Change the location of this file in the next line to your own directory.
-##root -l '/gpfs/mnt/gpfs02/eic/palspeic/EpicHcalAnalysis/ebyh/readHCalSimReader.C("'${DDSIM_FILE}'" , "'${OUTPUT_FILE}'")'
+####root -l '/gpfs/mnt/gpfs02/eic/palspeic/EpicHcalAnalysis/ebyh/readHCalSimReader.C("'${DDSIM_FILE}'" , "'${OUTPUT_FILE}'")'
 root -l ''${current_dir}'/readHCalSimReader.C("'${DDSIM_FILE}'" , "'${OUTPUT_FILE}'")'
 rm -r $DDSIM_FILE
