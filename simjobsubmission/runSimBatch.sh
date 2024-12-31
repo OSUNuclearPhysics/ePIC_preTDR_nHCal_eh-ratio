@@ -19,7 +19,7 @@ if [ -f "$DDSIM_FILE" ]; then
     echo "$DDSIM_FILE exists."
 else
     #####source /gpfs/mnt/gpfs02/eic/palspeic/eicsoft/epic/install/setup.sh
-    source /opt/detector/epic-main/setup.sh
+    source /opt/detector/epic-main/bin/thisepic.sh
     ddsim --compactFile $DETECTOR_PATH/epic_backward_hcal_only.xml --numberOfEvents ${NUMBER_OF_EVENTS} --random.seed $(date +%N) --enableGun --gun.particle $GUN_PARTICLE --gun.thetaMin 90*degree --gun.thetaMax 180*degree --gun.distribution uniform --gun.momentumMin ${GUN_MOMENTUM_MIN}*GeV --gun.momentumMax ${GUN_MOMENTUM_MAX}*GeV --outputFile ${DDSIM_FILE}
 fi
 
