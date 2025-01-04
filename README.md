@@ -30,7 +30,7 @@ and so on..
 
 change the names of the files in alphabetic order with increasing momentum (aoutput_e-_1GeV_hcal_only.root, boutput_e-_2GeV_hcal_only.root, aoutput_pi-_1GeV_hcal_only.root, boutput_pi-_2GeV_hcal_only.root, etc.)
 
-copy `output*hcal_only.root`s (1,2,5,10,20) to a directory named `high_energy`. 
+copy `*output*hcal_only.root`s (1,2,5,10,20) to a directory named `high_energy`. 
 copy `ebyh_ana.C` to the parent directory of `high_energy`.
 One can further analyze it and plot energy deposition distribution, sampling fraction, etc. using `ebyh_ana.C ("particle species (e.g. e-)", "high_energy")`
 
